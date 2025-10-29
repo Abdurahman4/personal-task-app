@@ -12,7 +12,10 @@ class StatisticsPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Task Statistics"),
+        title: const Text(
+          "Task Statistics",
+          style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+        ),
       ),
       body: user == null
           ? const Center(child: Text("User not logged in"))
